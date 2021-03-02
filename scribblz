@@ -1,0 +1,57 @@
+
+# coding: utf-8
+
+# In[2]:
+
+
+#on python dictionaries
+Dict = {'Pets':23,'Chemicals':31,'HBA':37,'Consumables':50,'Bev':58,'Cereal':59,'Toy':75, 'Seasonal':74,'Kitchen':65,'Domestic':61,'Cosmetic':60}
+Dict.keys()
+
+
+# In[4]:
+
+
+Dict.values()
+
+
+# In[5]:
+
+
+Dict['Chemicals']
+
+
+# In[6]:
+
+
+#dictionary
+
+
+# In[7]:
+
+
+L = [1,2,3,4]
+
+
+# In[8]:
+
+
+L.append([5,6])
+print(L)
+
+
+# In[13]:
+
+
+son = {'uni':'rancho cucamunga'}
+son['uni']
+
+
+# In[27]:
+
+
+f = int(input('type an integer: ')) #note that you have to specifically cast input to the int in this case 
+if(f >= 4):
+    print("integer is equal to or greater than 4")
+else:
+    print('integer is not equal to or greater than 4')

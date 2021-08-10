@@ -8,7 +8,7 @@ import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
-from __future__ import print_function # adds compatibility tp python 2 
+from __future__ import print_function # adds compatibility to python 2 
 
 
 # In[2]:

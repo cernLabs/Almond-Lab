@@ -8,7 +8,7 @@ import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
-from __future__ import print_function # adds compatibility to python 2 
+#from __future__ import print_function # adds compatibility tp python 2 
 
 
 # In[2]:
@@ -28,7 +28,7 @@ import csv
 # In[4]:
 
 
-#!pip install xlrd
+!pip install xlrd
 
 
 # <p style="font-size:23px">nice! now that we got xlrd in the computer, let's never run this line again</p> 
@@ -146,9 +146,18 @@ alm_ykg
 # In[17]:
 
 
-alm_ykg['Production in kg'][1997] = (alm_ykg['Production in kg'][1996]+alm_ykg['Production in kg'][1998])*0.5
+#alm_ykg['Production in kg'][1997] = (alm_ykg['Production in kg'][1996]+alm_ykg['Production in kg'][1998])*0.5
 
-alm_ykg
+#alm_ykg
+
+for i in range(alm_ykg['Production in kg']):
+ if alm_ykg['Production in kg'][i].isna():
+  alm_ykg['Production in kg'][i] = (alm_ykg['Production in kg'][i-1]+alm_ykg['Production in kg'][i+1])*0.5
+ else:
+  pass
+
+  
+ 
 
 
 # <p style="font-size:23px">now let's visualize</p>
